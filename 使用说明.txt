@@ -1,0 +1,10 @@
+本程序清除csv数据中的回车换行（不是每行数据的换行）
+
+解压后，用cmd进入命令行，然后执行csvclean -help 查看参数：
+-c 字符集，可以指定为gbk，默认为utf8
+-i 输入文件
+-o 输出文件
+比如转换a.csv，该文件是gbk格式，执行：
+csvclean -c=gbk -i=a.csv -o=b.csv
+
+注意：输出的文件固定为utf-8字符集
